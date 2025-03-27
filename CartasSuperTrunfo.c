@@ -17,14 +17,14 @@ int main() {
     // Cadastro das Cartas:
 
     // Pedindo as informações da carta 1 ao usuário
-    printf("\n\nCarta 1\nEstado: ");
-    scanf(" %[^\n]", estado1);
+    printf("\nCarta 1\nEstado: ");
+    scanf(" %s", estado1);
 
     printf("Código: ");
-    scanf("%3s", codigo1);
+    scanf("%s", codigo1);
 
     printf("Cidade: ");
-    scanf(" %[^\n]", cidade1);
+    scanf(" %s", cidade1);
 
     printf("População: ");
     scanf("%lf", &pop1);
@@ -39,7 +39,7 @@ int main() {
     scanf("%d", &npt1);
     
     // Pedindo as informações da carta 2 ao usuário
-    printf("\n\nCarta 2\nEstado: ");
+    printf("\nCarta 2\nEstado: ");
     scanf("%s", estado2);
 
     printf("Código: ");
