@@ -103,12 +103,12 @@ int main() {
     printf(" venceu (%d)\n", (npt1 > npt2));
 
     printf("Densidade Populacional: Carta ");
-    if(dpop1 > dpop2){
+    if(dpop1 < dpop2){
         printf("1"); 
     }else{
         printf("2");
     }
-    printf(" venceu (%d)\n", (dpop1 > dpop2));
+    printf(" venceu (%d)\n", (dpop1 < dpop2));
 
     printf("PIB per Capita: Carta ");
     if(ppc1 > ppc2){
