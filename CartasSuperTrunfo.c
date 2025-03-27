@@ -15,7 +15,6 @@ int main() {
     int npt2;
 
     // Cadastro das Cartas:
-
     // Pedindo as informações da carta 1 ao usuário
     printf("\n\nCarta 1\nEstado: ");
     scanf(" %[^\n]", estado1);
@@ -64,12 +63,12 @@ int main() {
     
     dpop1 = pop1 / area1;
     ppc1 = pib1 / pop1;
-    poder1 = pop1+area1+pib1+npt1+dpop1+ppc1;
+    poder1 = (pop1+area1+pib1+npt1+ppc1) - dpop1;
 
     // Exibição dos Dados das Cartas:
     // Compara os atributos das cartas e imprime o vencedor
 
-    printf("Comparação de Cartas:\n");
+    printf("\n\nComparação de Cartas:\n");
     printf("População: Carta ");
     if(pop1 > pop2){
         printf("1"); 
@@ -124,7 +123,7 @@ int main() {
     }else{
         printf("2");
     }
-    printf(" venceu (%d)\n", (poder1 > poder2));
+    printf(" venceu (%d)\n\n", (poder1 > poder2));
 
     return 0;
 }
