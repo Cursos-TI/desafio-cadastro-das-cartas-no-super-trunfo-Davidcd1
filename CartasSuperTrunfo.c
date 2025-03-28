@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo Nível Mestre - Países
+// Desafio Super Trunfo - Países Nível Mestre
 // Tema 1 - Cadastro das Cartas
 int main() {
     
@@ -19,44 +19,44 @@ int main() {
     printf("\nCarta 1\nEstado: ");
     scanf(" %s", estado1);
 
-    printf("Código: ");
+    printf("Codigo: ");
     scanf("%s", codigo1);
 
     printf("Cidade: ");
     scanf(" %s", cidade1);
 
-    printf("População: ");
+    printf("Populacao: ");
     scanf("%lf", &pop1);
 
-    printf("Área: ");
+    printf("Area: ");
     scanf("%lf", &area1);
 
     printf("PIB: ");
     scanf("%lf", &pib1);
 
-    printf("Pontos Turísticos: ");
+    printf("Pontos Turisticos: ");
     scanf("%d", &npt1);
     
     // Pedindo as informações da carta 2 ao usuário
     printf("\nCarta 2\nEstado: ");
     scanf("%s", estado2);
 
-    printf("Código: ");
+    printf("Codigo: ");
     scanf("%3s", codigo2);
 
     printf("Cidade: ");
     scanf("%s", cidade2);
 
-    printf("População: ");
+    printf("Populacao: ");
     scanf("%lf", &pop2);
 
-    printf("Área: ");
+    printf("Area: ");
     scanf("%lf", &area2);
 
     printf("PIB: ");
     scanf("%lf", &pib2);
 
-    printf("Pontos Turísticos: ");
+    printf("Pontos Turisticos: ");
     scanf("%d", &npt2);
 
     // Calculando os valores "Densidade Populacional", "PIB per Capta" e "Poder" das duas cartas
@@ -70,63 +70,39 @@ int main() {
     poder1 = (pop1+area1+pib1+npt1+ppc1) - dpop1;
     poder2 = (pop2+area2+pib2+npt2+ppc2) - dpop2;
 
+    int resultado;
+
     // Exibição dos Dados das Cartas:
     // Compara os atributos das cartas e imprime o vencedor
-    printf("\n\nComparação de Cartas:\n");
-    printf("População: Carta ");
-    if(pop1 > pop2){
-        printf("1"); 
-    }else{
-        printf("2");
-    }
-    printf(" venceu (%d)\n", (pop1 > pop2));
-    
-    printf("Área: Carta ");
-    if(area2 > area2){
-        printf("1"); 
-    }else{
-        printf("2");
-    }
-    printf(" venceu (%d)\n", (area2 > area2));
-    
-    printf("PIB: Carta ");
-    if(pib1 > pib2){
-        printf("1"); 
-    }else{
-        printf("2");
-    }
-    printf(" venceu (%d)\n", (pib1 > pib2));
-    
-    printf("Pontos Turísticos: Carta ");
-    if(npt1 > npt2){
-        printf("1"); 
-    }else{
-        printf("2");
-    }
-    printf(" venceu (%d)\n", (npt1 > npt2));
+    printf("\n\nComparacao de Cartas:\n");
 
-    printf("Densidade Populacional: Carta ");
-    if(dpop1 < dpop2){
-        printf("1"); 
-    }else{
-        printf("2");
-    }
-    printf(" venceu (%d)\n", (dpop1 < dpop2));
+    resultado = pop1 > pop2;
+    resultado = (resultado == 0) + 1;
+    printf("Populacao: Carta %d venceu (%d)\n", resultado, (pop1 > pop2));
+    
+    resultado = area1 > area2;
+    resultado = (resultado == 0) + 1;
+    printf("Area: Carta %d venceu (%d)\n", resultado, (area1 > area2));
+    
+    resultado = pib1 > pib2;
+    resultado = (resultado == 0) + 1;
+    printf("PIB: Carta %d venceu (%d)\n", resultado, (pib1 > pib2));
+    
+    resultado = npt1 > npt2;
+    resultado = (resultado == 0) + 1;
+    printf("Pontos Turisticos: Carta %d venceu (%d)\n", resultado, (npt1 > npt2));
 
-    printf("PIB per Capita: Carta ");
-    if(ppc1 > ppc2){
-        printf("1"); 
-    }else{
-        printf("2");
-    }
-    printf(" venceu (%d)\n", (ppc1 > ppc2));
+    resultado = dpop1 < dpop2;
+    resultado = (resultado == 0) + 1;
+    printf("Densidade Populacional: Carta %d venceu (%d)\n", resultado, (dpop1 < dpop2));
 
-    printf("Super Poder: Carta ");
-    if(poder1 > poder2){
-        printf("1"); 
-    }else{
-        printf("2");
-    }
+    resultado = ppc1 > ppc2;
+    resultado = (resultado == 0) + 1;
+    printf("PIB per Capita: Carta %d venceu (%d)\n", resultado, (ppc1 > ppc2));
+
+    resultado = poder1 > poder2;
+    resultado = (resultado == 0) + 1;
+    printf("Super Poder: Carta %d venceu (%d)\n\n", resultado, (poder1 > poder2));
 
     return 0;
 }
