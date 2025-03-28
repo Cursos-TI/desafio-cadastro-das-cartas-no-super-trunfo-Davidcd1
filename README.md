@@ -6,7 +6,7 @@
 3 - Insira os atributos das cartas 1 e 2 como o nome da cidade, código da carta e nome do estado com valores que podem ser alfabeticos e os atributos da carta como população, área, pib e número de pontos turísticos com valores que devem ser númericos.
 4 - Logo após isso será exibido no terminal a carta vencedora em cada atributo.
 
-
+## Desafio
 Bem-vindo ao desafio "Super Trunfo - Países"! No jogo Super Trunfo, os jogadores comparam os atributos das cartas para determinar a mais forte. O tema deste Super Trunfo é "Países", onde você comparará os atributos das cidades.
 
 A empresa MateCheck contratou você para desenvolver a parte inicial do jogo, que consiste no cadastro das cartas.
