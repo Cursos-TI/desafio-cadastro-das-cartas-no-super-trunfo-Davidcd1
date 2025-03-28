@@ -6,12 +6,12 @@ int main() {
     
     // Variáveis da carta 1
     char estado1[30], cidade1[50], codigo1[4];
-    double pop1, area1, pib1, dpop1, ppc1, poder1;
+    float pop1, area1, pib1, dpop1, ppc1, poder1;
     int npt1;
 
     // Variáveis da carta 2
     char estado2[30], cidade2[50], codigo2[4];
-    double pop2, area2, pib2, dpop2, ppc2, poder2;
+    float pop2, area2, pib2, dpop2, ppc2, poder2;
     int npt2;
 
     // Cadastro das Cartas:
@@ -26,13 +26,13 @@ int main() {
     scanf(" %s", cidade1);
 
     printf("Populacao: ");
-    scanf("%lf", &pop1);
+    scanf("%f", &pop1);
 
     printf("Area: ");
-    scanf("%lf", &area1);
+    scanf("%f", &area1);
 
     printf("PIB: ");
-    scanf("%lf", &pib1);
+    scanf("%f", &pib1);
 
     printf("Pontos Turisticos: ");
     scanf("%d", &npt1);
@@ -48,13 +48,13 @@ int main() {
     scanf("%s", cidade2);
 
     printf("Populacao: ");
-    scanf("%lf", &pop2);
+    scanf("%f", &pop2);
 
     printf("Area: ");
-    scanf("%lf", &area2);
+    scanf("%f", &area2);
 
     printf("PIB: ");
-    scanf("%lf", &pib2);
+    scanf("%f", &pib2);
 
     printf("Pontos Turisticos: ");
     scanf("%d", &npt2);
