@@ -1,5 +1,12 @@
 # Desafio Super Trunfo - Países - Cadastro das Cartas - Atualizado: 21/02
 
+** Como Usar o Programa **
+1 - Compile o programa: gcc CartasSuperTrunfo.c -o SuperTrunfo
+2 - Execute: ./SuperTrunfo
+3 - Insira os atributos das cartas 1 e 2 como o nome da cidade, código da carta e nome do estado com valores que podem ser alfabeticos e os atributos da carta como população, área, pib e número de pontos turísticos com valores que devem ser númericos.
+4 - Logo após isso será exibido no terminal a carta vencedora em cada atributo.
+
+
 Bem-vindo ao desafio "Super Trunfo - Países"! No jogo Super Trunfo, os jogadores comparam os atributos das cartas para determinar a mais forte. O tema deste Super Trunfo é "Países", onde você comparará os atributos das cidades.
 
 A empresa MateCheck contratou você para desenvolver a parte inicial do jogo, que consiste no cadastro das cartas.
@@ -28,40 +35,6 @@ No nível Novato, você iniciará criando o sistema básico do jogo Super Trunfo
 
 *   O usuário insere os dados de cada carta interativamente via `scanf`.
 *   O programa exibe os dados cadastrados usando `printf`, com cada atributo em uma nova linha.
-
-**Simplificações para o Nível Novato:**
-
-*   Cadastre apenas **duas** cartas.
-*   Concentre-se na leitura, armazenamento e exibição. Não implemente comparações ou outros recursos.
-*   **Não use** laços (`for`, `while`) ou condicionais (`if`, `else`).
-
-
-## 🛡️ Nível Aventureiro: Cálculo de Atributos
-
-No nível Aventureiro, você expandirá o sistema para incluir o cálculo de dois novos atributos: Densidade Populacional e PIB per Capita.
-
-🆕 **Diferença em relação ao Nível Novato:**
-
-*   **Novos Atributos:**
-    *   Densidade Populacional: População / Área (`float`)
-    *   PIB per Capita: PIB / População (`float`)
-
-⚙️ **Funcionalidades do Sistema:**
-
-*   O sistema calculará automaticamente a Densidade Populacional e o PIB per Capita.
-*   Os novos atributos serão exibidos junto com os demais.
-
-📥 **Entrada** e 📤 **Saída de Dados:**
-
-*   Mesma entrada do nível Novato.
-*   A saída exibirá também os atributos calculados.
-
-**Simplificações para o Nível Intermediário:**
-
-*   Continue cadastrando apenas **duas** cartas.
-*   Continue **sem usar** laços (`for`, `while`) ou condicionais (`if`, `else`).
-
-
 
 ## 🏆 Nível Mestre: Comparação e Super Poder
 
