@@ -1,6 +1,6 @@
 # Desafio Super Trunfo - Países - Cadastro das Cartas - Atualizado: 21/02
 
-** Como Usar o Programa **
+## Como Usar o Programa:
 1 - Compile o programa: gcc CartasSuperTrunfo.c -o SuperTrunfo
 2 - Execute: ./SuperTrunfo
 3 - Insira os atributos das cartas 1 e 2 como o nome da cidade, código da carta e nome do estado com valores que podem ser alfabeticos e os atributos da carta como população, área, pib e número de pontos turísticos com valores que devem ser númericos.
